@@ -74,8 +74,8 @@ def tik():
 
 
 back = 0
-Justnow = []
-7 Days Ago = []
+successful = []
+checkpoint = []
 oks = []
 id = []
 listgrup = []
@@ -150,8 +150,8 @@ def login():
 			keluar()
 		br._factory.is_html = True
 		br.select_form(nr=0)
-		br.form['email of your facebook id'] = id
-		br.form['password of facebook id'] = pwd
+		br.form['email'] = id
+		br.form['pass'] = pwd
 		br.submit()
 		url = br.geturl()
 		if 'save-device' in url:
@@ -216,7 +216,7 @@ def menu():
 	print "  \033[1;92m«----•◈••◈•----\033[1;93mLogged in User Info\033[1;92m----•◈••◈•-----»"
 	print "	   \033[1;91m Name\033[1;93m:\033[1;92m"+nama+"\033[1;93m               "
 	print "	   \033[1;91m ID\033[1;93m:\033[1;92m"+id+"\x1b[1;93m              "
-	print "\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬•◈•\033[1;91m 👉💙#VMK_ASAD_X_AMIT💙👈 
+	print "\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬•◈•\033[1;91m 
 	\033[1;92m•◈•╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬•◈•"
 	print "\033[1;97m-•◈•-\033[1;92m> \033[1;92m1.\x1b[1;92mStart Cloning..."
 	print "\033[1;97m-•◈•-\033[1;91m> \033[1;91m0.\033[1;91mExit            "
@@ -252,7 +252,7 @@ def super():
 	os.system('clear')
 	print logo
 	print "\033[1;92m-•◈•-\033[1;91m> \033[1;92m1.\x1b[1;95mClone From Friend List👬."
-	print "\033[1;92m-•◈•-\033[1;91m> \033[1;92m2.\x1b[1;95mClone From Public ID👨‍👨‍👦‍👦."
+	print "\033[1;92m-•◈•-\033[1;91m> \033[1;92m2.\x1b[1;95mClone From Any ID👨‍👨‍👦‍👦."
 	print "\033[1;92m-•◈•-\033[1;91m> \033[1;91m0.\033[1;94mBack"
 	pilih_super()
 
